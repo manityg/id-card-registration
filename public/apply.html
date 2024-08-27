@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Apply</title>
+    <link rel="stylesheet" href="/public/css/styles.css">
+</head>
+<body>
+    <header>
+        <img class="img1" src="./public/images/nic.png">
+        <img class="img2" src="./public/images/digitalindia.png">
+        <h1>Apply</h1>
+        <div id="header-menu">
+            <button onclick="window.location.href='./employeeDashboard.html'">Home</button>
+            <button id="apply" onclick="window.location.href='./apply.html'">Apply</button>
+            <button id="profile" onclick="window.location.href='./profile.html'">Profile</button>
+            <button id="back" onclick="window.history.back()">Back</button>
+        </div>
+    </header>
+    <main class="container">
+        <section>
+            <h2>Upload Photograph and Signature</h2>
+            <form id="uploadForm">
+                <label for="photo">Upload Photograph:</label>
+                <input type="file" id="photo" name="photo" required>
+                <img id="photoPreview" src="" alt="Photo Preview" class="hide" style="width: 100px; height: 100px; object-fit: cover; border: 1px solid #ccc; margin-left: 10px;">
+                
+                <label for="signature">Upload Signature:</label>
+                <input type="file" id="signature" name="signature" required>
+                <img id="signaturePreview" src="" alt="Signature Preview" class="" style="width: 100px; height: 100px; object-fit: cover; border: 1px solid #ccc; margin-left: 10px;">
+                
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+        
+        <section>
+            <h2>Check Application Status</h2>
+            <div id="status"></div>
+        </section>
+    </main>
+    <footer>
+            <p>&copy; 2024 ID Card Registration Portal. All rights reserved.</p>        
+    </footer>
+    <script src="/public/js/apply.js"></script>
+</body>
+</html>
